@@ -1,0 +1,51 @@
+name: CI/CD - Build & Deploy
+
+# Chạy khi push lên nhánh main (hoặc khi mở PR vào main để kiểm tra trước)
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-server:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: server
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: server/package-lock.json
+      - run: npm ci
+      - run: npm run build
+
+  build-client:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: client
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: client/package-lock.json
+      - run: npm ci
+      - run: npm run build
+
+  deploy:
+    needs: [build-server, build-client]
+    runs-on: ubuntu-latest
+    environment: deploy_env
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - name: Deploy server Render
+        run: curl -fsS -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
+
+      - name: Deploy client Vercel
+        run: curl -fsS -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"

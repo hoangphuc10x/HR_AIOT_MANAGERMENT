@@ -1,0 +1,781 @@
+{
+  "common": {
+    "dashboard": "Dashboard",
+    "employees": "Employees",
+    "departments": "Departments",
+    "attendance": "Attendance",
+    "leaveRequest": "Leave Request",
+    "manageAttendance": "Manage Attendance",
+    "leaveRequestsSummary": "Leave Requests Summary",
+    "settings": "Settings",
+    "logout": "Logout",
+    "search": "Search",
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back",
+    "confirm": "Confirm",
+    "submit": "Submit",
+    "loading": "Loading...",
+    "noData": "No data available",
+    "actions": "Actions",
+    "list": "List",
+    "status": "Status",
+    "close": "Close",
+    "unknown": "Unknown",
+    "update": "Update",
+    "invite": "Invite",
+    "editProfile": "Edit Profile",
+    "permissions": "Permissions",
+    "no": "No",
+    "viewDetails": "View Details",
+    "editPermission": "Edit Permission",
+    "remove": "Remove",
+    "admin": "Admin",
+    "staff": "Staff",
+    "employee": "Department Employee",
+    "manager": "Department Manager",
+    "optional": "Optional",
+    "hello": "Hello",
+    "updateAvatar": "Update Avatar",
+    "Timestamps": "Timestamps",
+    "updateLogo": "Update Logo",
+    "filter": "Filter",
+    "clearAll": "Clear All",
+    "submitLoading": "Submit",
+    "employeeCode": "Employee Code",
+    "legend": "Legend",
+    "showing": "Showing",
+    "somethingWentWrong": "Something went wrong",
+    "reloadPage": "Reload page",
+    "contactSupport": "Contact support",
+    "cropAvatar": "Crop Avatar",
+    "restore": "Restore"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "username": "Username",
+    "password": "Password",
+    "changePassword": "Change Password",
+    "bankInfo": "Bank Information",
+    "bankAccount": "Bank Account Number",
+    "bankName": "Bank Name"
+  },
+  "employee": {
+    "name": "Name",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "fullName": "Full Name",
+    "identityNumber": "ID/Passport Number",
+    "id": "Employee ID",
+    "phone": "Phone Number",
+    "sex": "Gender",
+    "role": "Role",
+    "email": "Email",
+    "avatarUrl": "Avatar",
+    "status": "Status",
+    "createEmployee": "Add New Employee",
+    "detail": "Employee Details",
+    "contactInfo": "Contact Information",
+    "personalInfo": "Personal Information",
+    "systemInfo": "System Information",
+    "otherInfo": "Other Information",
+    "noEmployeeFound": "No employees found.",
+    "joinDate": "Join Date",
+    "statusTypes": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "suspended": "Suspended"
+    },
+    "employeeCode": "Employee Code",
+    "showPermissions": "Show Permissions",
+    "hidePermissions": "Hide Permissions",
+    "selectAll": "Select All",
+    "clearAll": "Clear All",
+    "bankAccount": "Bank Account Number",
+    "bankName": "Bank Name",
+    "totalEmployees": "Total Employees",
+    "activeEmployees": "Active Employees",
+    "activeEmployeesDesc": "Number of employees currently working",
+    "inactiveEmployees": "Inactive Employees",
+    "delete": {
+      "confirm": "Are you sure you want to delete employee {{name}}?",
+      "success": "Employee deleted successfully",
+      "error_department": "Employee still belongs to a department, cannot delete"
+    },
+    "update": {
+      "success": "Update user successful",
+      "error": "Some thing was wrong when update user"
+    },
+    "description": "Manage employees in the organization",
+    "dateOfBirth": "Date of Birth",
+    "address": "Address",
+    "createdAt": "Created At",
+    "roles": {
+      "ADMIN": "Administrator",
+      "STAFF": "Staff"
+    },
+    "addEmployeeDescription": "Fill in the information below to create a new employee account",
+    "createdDate": "Created Date",
+    "lastUpdate": "Last Updated",
+    "deleteDate": "Deleted Date",
+    "active": "Active",
+    "inactive": "Inactive",
+    "pending": "Pending",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "addressPlaceholder": "Enter address",
+    "fullNamePlaceholder": "Enter full name",
+    "createSuccess": "Employee created successfully",
+    "createError": "Failed to create employee, please try again"
+  },
+  "dashboard": {
+    "title": "Attendance Dashboard",
+    "subtitle": "Overview of employee attendance and leave statistics",
+    "today": "Today",
+    "retry": "Retry",
+    "loadError": "Unable to load dashboard data.",
+    "unknownError": "Unknown error occurred",
+    "absences": "Absences",
+    "workingDays": "Working Days",
+    "absenceRate": "Absence Rate",
+    "stats": {
+      "totalEmployees": "Total Employees",
+      "currentEmployees": "Total current employees",
+      "absentToday": "Absent Today",
+      "ofTotalEmployees": "of total employees",
+      "absentThisMonth": "Absent This Month",
+      "totalAbsenceDaysMonth": "Total absence days in September",
+      "avgAbsenceRate": "Avg Absence Rate",
+      "normalLevel": "Within normal range",
+      "needMonitoring": "Needs monitoring"
+    },
+    "departmentStats": {
+      "title": "Department Absence Statistics",
+      "ranking": "Departments with highest absence days ranking",
+      "employees": "employees",
+      "days": "days",
+      "rate": "Rate"
+    },
+    "topEmployees": {
+      "title": "Top Absent Employees",
+      "ranking": "Ranking",
+      "fullName": "Full Name",
+      "department": "Department",
+      "position": "Position",
+      "absenceDays": "Absence Days",
+      "status": "Status"
+    },
+    "monthlyTrends": {
+      "title": "Monthly Absence Statistics",
+      "maxAbsenceMonth": "Month with Most Absences",
+      "minAbsenceMonth": "Month with Least Absences",
+      "avgPerMonth": "Average/Month",
+      "avgAbsenceRate": "Avg Absence Rate",
+      "absenceDays": "absence days",
+      "ofTotalWorkDays": "of total working days"
+    },
+    "employee": {
+      "status": {
+        "warning": "Warning",
+        "monitor": "Under monitoring",
+        "normal": "Normal"
+      }
+    }
+  },
+  "department": {
+    "failToFetchPermissions": "Fail To Fetch Permissions",
+    "removeMemberConfirmTitle": "Are you sure when delete this member in department?",
+    "removeMemberConfirmWarning": "This member will be delete out of department permanently",
+    "remove": "Delete",
+    "failToRemoveMember": "Some thing wrong when delete user",
+    "memberRemoved": "Delete member successful",
+    "permissions": "Permissions",
+    "description": "Manage departments and organizational structure",
+    "manager": "Manager",
+    "viewDetails": "View Details",
+    "departmentName": "Department Name",
+    "headOfDepartment": "Head of Department",
+    "deputyOfDepartment": "Deputy",
+    "levelOfDepartment": "Department Level",
+    "numberOfEmployees": "Number of Employees",
+    "activeDepartments": "Active Departments",
+    "inactiveDepartments": "Inactive Departments",
+    "deleteDepartment": "delete Departments",
+    "departmentList": "Department List",
+    "position": "Position",
+    "headDepartment": "Head of Department",
+    "deputy": "Deputy",
+    "staff": "Staff",
+    "contact": "Contact",
+    "status": {
+      "1": "ACTIVE",
+      "2": "INACTIVE"
+    },
+    "id": "Department ID",
+    "members": "Department Members",
+    "noMemberFound": "No members found",
+    "noDepartmentFound": "No departments found.",
+    "searchByNameOrEmail": "Search by name or email",
+    "searchByDepartmentName": "Search by department name",
+    "deleteConfirmTitle": "Delete Confirmation",
+    "deleteConfirmMessage": "Are you sure you want to delete this item?",
+    "deleteConfirmWarning": "Deleting this department will remove all employees belonging to it.",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "update": "Update",
+    "membersList": "Employee List",
+    "select": "Select",
+    "addNewDepartment": "Add New Department",
+    "updateDepartment": "Update Department",
+    "requiredName": "Department name is required",
+    "requiredHead": "Head of department is required",
+    "failToFetch": "Failed to fetch department data",
+    "failToAdd": "Failed to add department",
+    "failToFetchMembers": "Failed to fetch members data",
+    "addSuccessful": "Department added successfully",
+    "failToUpdate": "Failed to update department",
+    "updateSuccessful": "Department updated successfully",
+    "duplicateName": "Department name already exists",
+    "selectRole": "Select Role",
+    "pleaseSelectThisMemberFirst": "Please select this member first",
+    "permissionTitle": "Permissions",
+    "permission": {
+      "1": "View",
+      "2": "Edit",
+      "3": "Delete",
+      "4": "Invite"
+    },
+    "atLeastOnePermission": "You must select at least one permission.",
+    "noDepartmentAssigned": "No department assigned",
+    "membersManagement": "Department Members Management",
+    "totalMembers": "Total Members",
+    "removeSelected": "Remove selected",
+    "addEmployee": "Add Employee",
+    "searchMembers": "Search members...",
+    "showingMembers": "Showing {{count}} of {{total}} members",
+    "selectedMembers": "Selected",
+    "levelList": "Level List",
+    "levels": {
+      "1": {
+        "name": "Level 1",
+        "description": "Department with the highest authority",
+        "permissions": [
+          "Role management",
+          "Employee management",
+          "Department management",
+          "Attendance management",
+          "Leave management"
+        ]
+      },
+      "2": {
+        "name": "Level 2",
+        "description": "Department managing employees",
+        "permissions": [
+          "Employee management",
+          "Department management",
+          "Attendance management",
+          "Leave management",
+          "Approve leave requests"
+        ]
+      },
+      "3": {
+        "name": "Level 3",
+        "description": "Regular department",
+        "permissions": [
+          "Manage employees within the department",
+          "Manage participating departments"
+        ]
+      }
+    },
+    "noMembersSelected": "No member selected",
+    "selectHead": "Select Head Department",
+    "selectDeputy": "Select Deputy Department",
+    "level": "Level of department",
+    "addMembers": "Add Member",
+    "permissionsForLevel": "Permissions For Level",
+    "deleted": "Deleted"
+  },
+  "attendance": {
+    "attendanceManagement": "Attendance Management",
+    "description": "Track attendance and working hours of employees",
+    "exportReport": "Export Report",
+    "todayAttendance": "Today's Attendance",
+    "employee": "Employee",
+    "date": "Date",
+    "checkIn": "Check-in Time",
+    "checkOut": "Check-out Time",
+    "status": "Status",
+    "present": "Present",
+    "late": "Late",
+    "absent": "Absent",
+    "title": "Personal Attendance",
+    "greeting": "Hello, {{name}}",
+    "loadingAttendance": "Loading attendance data...",
+    "errorLoading": "Error loading attendance",
+    "retry": "Retry",
+    "checkInButton": "Check In",
+    "checkOutButton": "Check Out",
+    "processing": "Processing...",
+    "locationOfCompany": "At company location",
+    "todaySummary": "Today's Summary",
+    "checkInTime": "Check-in Time",
+    "checkOutTime": "Check-out Time",
+    "workingHours": "Working Hours",
+    "workingDays": "Working Days",
+    "onTime": "On Time",
+    "totalHours": "Total Hours",
+    "AttendanceTable": "Attendance Records",
+    "month": "Month",
+    "Date": "Date",
+    "weekDate": "Weekday",
+    "comingTime": "Check-in",
+    "outTime": "Check-out",
+    "weekend": "Weekend",
+    "noDataInMonth": "No attendance data for this month",
+    "checkInSuccess": "Check-in successful",
+    "checkInFailed": "Check-in failed",
+    "checkInError": "Error during check-in",
+    "alreadyCheckedIn": "You have already checked in",
+    "needCheckInFirst": "You need to check in first",
+    "confirmCheckout": "Are you sure you want to check out?",
+    "checkOutSuccess": "Check-out successful",
+    "checkOutFailed": "Check-out failed",
+    "checkOutError": "Error during check-out",
+    "done": "Attendance already today",
+    "attendanceStatus": {
+      "on_time": "On Time",
+      "late": "Late",
+      "early_leave": "Left Early",
+      "absent": "Absent",
+      "working": "Working",
+      "completed": "Completed",
+      "on_leave": "On Leave",
+      "late_and_early_leave": "Late & Left Early",
+      "not_started": "Not Started"
+    },
+    "confirmCheckoutTitle": "Are you sure when complete attendance?",
+    "confirmCheckoutMessage": "Enter confirm to submit",
+    "information": "Information",
+    "detail": "Detail",
+    "edit": "Edit",
+    "leavingInformation": "Leaving Information",
+    "leaveType": "Leave Type",
+    "time": "Time",
+    "approveBy": "Approve By",
+    "updateTitle": "Update time",
+    "confirmTitle": "Confirm time information"
+  },
+  "leaveRequest": {
+    "title": "Manage Leave Applications",
+    "newLeaveRequest": "New Leave Request",
+    "endDatMustAfterStart": "End Date Must Be Greater Than or Equal to Start Date",
+    "leaveType": "Leave Type",
+    "annual": "Annual Leave",
+    "sick": "Sick Leave",
+    "unpaid": "Unpaid Leave",
+    "other": "Other",
+    "reason": "Reason",
+    "enterLeaveReason": "Enter Leave Reason",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "details": "Leave Application Details",
+    "code": "Application Code",
+    "employee_info": "Employee Information",
+    "leave_info": "Leave Information",
+    "leave_type": "Leave Type",
+    "time": "Time",
+    "no_reason": "No specific reason",
+    "date_send": "Date sent",
+    "status": "Status",
+    "approveBy": "Approved by",
+    "reject": "Rejected",
+    "approve": "Approved",
+    "date": "Date",
+    "delete": "Delete",
+    "approve_success": "Approve success",
+    "reject_success": "Reject success",
+    "cancel_success": "Cancel success",
+    "delete_leave_request_confirm": "Are you sure you want to delete this leave request?",
+    "delete_leave_request_warning": "This action cannot be undone."
+  },
+  "pagination": {
+    "showing": "Showing {{from}} to {{to}} of {{total}} results"
+  },
+  "login": {
+    "welcome_back": "Welcome back",
+    "enter_details": "Please enter your details",
+    "email_or_username": "Email",
+    "password": "Password",
+    "forgot_password": "Forgot password?",
+    "login": "Login",
+    "find_account": "Find account",
+    "email": "Email",
+    "confirm_password": "Confirm Password",
+    "reset_password": "Reset Password",
+    "login_success": "Login successfully"
+  },
+  "logout": {
+    "title": "Logout",
+    "confirm": "Are you sure you want to logout?",
+    "ok": "Logout",
+    "cancel": "Cancel",
+    "message": "Are you sure you want to logout?"
+  },
+  "forgot_password": {
+    "welcome_back": "Forgot Password",
+    "enter_details": "Please enter a new password",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "reset_password": "Reset Password",
+    "confirm_code": "Verification code confirmed successfully",
+    "verify_email": "Verify email",
+    "enter_email": "Please enter your email to reset your password",
+    "sent_email": "We have sent a confirmation email to your address",
+    "enter_password": "Enter your current password",
+    "enter-new_password": "Enter your new password",
+    "confirm_new_password": "Confirm your new password"
+  },
+  "validation": {
+    "fullNameLength": "Full name must have valid length",
+    "identityNumber": "Invalid identity number",
+    "dateOfBirthRequired": "Date of birth is required",
+    "emailInvalid": "Invalid email address",
+    "phoneInvalid": "Invalid phone number",
+    "dateOfBirthUnder18": "Employee must be at least 18 years old",
+    "addressRequired": "Address is required",
+    "fullNameInvalid": "Full name invalid"
+  },
+  "validate": {
+    "required": "This field is required",
+    "invalid_email": "Invalid email",
+    "min_length": "Minimum length is {{min}} characters",
+    "max_length": "Maximum length is {{max}} characters",
+    "password_mismatch": "Passwords do not match",
+    "invalid_phone": "Invalid phone number",
+    "invalid_identity_number": "Invalid ID/Passport number",
+    "invalid_date": "Invalid date",
+    "future_date": "Date cannot be in the future",
+    "bank_account_length": "Bank account number must not exceed 20 characters",
+    "bank_name_length": "Bank name must not exceed 100 characters",
+    "fullName_length": "Full name must not exceed 100 characters",
+    "identityNumber_length": "ID/Passport number must not exceed 12 characters",
+    "addressRequired": "Address is required",
+    "emailInvalid": "Invalid email",
+    "phoneInvalid": "Invalid phone number",
+    "dateOfBirthInvalid": "Invalid date of birth",
+    "dateOfBirthRequired": "Date of birth is required",
+    "dateOfBirthFuture": "Date of birth cannot be in the future",
+    "userRolesRequired": "Role is required",
+    "statusRequired": "Status is required"
+  },
+  "language": "Language",
+  "vietnamese": "Vietnamese",
+  "english": "English",
+  "export": "Export",
+  "reset_account": {
+    "welcome_back": "Welcome back",
+    "enter_details": "Please enter a new password",
+    "newPassword": "New Password",
+    "verifyPassword": "Re-enter new password",
+    "go_to_login": "Go to login page",
+    "confirm": "Confirm"
+  },
+  "activate_account": {
+    "welcome_back": "Activate Account",
+    "enter_details": "Enter the account and password sent to your email to activate your account",
+    "email": "Email",
+    "oldPassword": "Old Password",
+    "newPassword": "New Password",
+    "verifyPassword": "Confirm New Password",
+    "go_to_login": "Go to login page",
+    "login": "Login"
+  },
+
+  "userPermissions": {
+    "title": "User Permissions Management",
+    "stt": "NO",
+    "id": "ID",
+    "name": "Name",
+    "email": "Email",
+    "permissionCount": "{{count}} Permissions",
+    "actions": "Actions",
+    "editPermission": "Edit Permissions",
+    "searchPlaceholder": "Search by name or email",
+    "showing": "Display from",
+    "of": "of",
+    "results": "result",
+    "notPermit": "Don't have permission"
+  },
+  "delete": {
+    "confirmMessage": "Please type the exact name \"{{fullName}}\" to confirm deletion:",
+    "nameMismatch": "Name does not match. Deletion cancelled.",
+    "success": "User deleted successfully",
+    "error": "An error occurred while deleting the user"
+  },
+  "permission": {
+    "saveSuccess": "Permissions saved successfully",
+    "saveFailed": "Failed to save permissions",
+    "saveFailedLog": "Failed to save permissions",
+    "saveError": "An error occurred while saving permissions",
+    "userPermission": "User permission management",
+    "loadingPermission": "Loading current permissions...",
+    "overviewTitle": "Permissions overview",
+    "overviewDescription": "{{count}} permissions have been selected for this user",
+    "saveChanges": "Save changes",
+    "selectAll": "Select all",
+    "deselectAll": "Deselect all"
+  },
+  "permissionGroup": {
+    "system": "System management",
+    "employee": "Employee management",
+    "department": "Department management",
+    "attendance": "Attendance management",
+    "leave": "Leave management"
+  },
+  "permissions": {
+    "setPermission": {
+      "name": "Set permissions",
+      "description": "Can assign permissions to other users"
+    },
+    "viewAllEmployee": {
+      "name": "View all employees",
+      "description": "Can view the list of all employees"
+    },
+    "createEmployee": {
+      "name": "Create employee",
+      "description": "Can create new employee accounts"
+    },
+    "deleteEmployee": {
+      "name": "Delete employee",
+      "description": "Can delete employee accounts"
+    },
+    "viewAllDepartment": {
+      "name": "View all departments",
+      "description": "Can view the list of all departments"
+    },
+    "createDepartment": {
+      "name": "Create department",
+      "description": "Can create new departments"
+    },
+    "updateDepartment": {
+      "name": "Update department",
+      "description": "Can update department information"
+    },
+    "deleteDepartment": {
+      "name": "Delete department",
+      "description": "Can delete departments"
+    },
+    "removeEmployee": {
+      "name": "Remove employee from department",
+      "description": "Can remove employees from departments"
+    },
+    "inviteEmployee": {
+      "name": "Invite employee to department",
+      "description": "Can invite employees to join departments"
+    },
+    "viewAttendance": {
+      "name": "View attendance of all departments",
+      "description": "Can view attendance information of all departments"
+    },
+    "viewLeaveRequest": {
+      "name": "View leave requests of all departments",
+      "description": "Can view leave requests of all departments"
+    },
+    "approveLeaveRequest": {
+      "name": "Approve leave request",
+      "description": "Can approve leave requests of all departments"
+    },
+    "rejectLeaveRequest": {
+      "name": "Reject leave request",
+      "description": "Can reject leave requests of all departments"
+    },
+    "permissions": "Permissions",
+    "employee": "Employee",
+    "department": "Department",
+    "leaveRequest": "Leave Request"
+  },
+  "changePassword": {
+    "title": "Change Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm New Password",
+    "success": "Password changed successfully",
+    "requirements": {
+      "title": "Password Requirements:",
+      "length": "At least 8 characters long",
+      "different": "Different from your current password",
+      "mix": "Should contain a mix of letters, numbers, and symbols for better security"
+    },
+    "submit": "Change Password",
+    "submitLoading": "Changing Password..."
+  },
+  "confirm_code": {
+    "access_email_to_reset_password": "Please check your email to get the confirmation code to reset your password.",
+    "confirm": "Confirm",
+    "reset_success": "Your password has been reset successfully."
+  },
+  "departmentPermissionGroup": {
+    "management": "Department Management"
+  },
+  "departmentPermissions": {
+    "viewOnly": {
+      "name": "View Only Self",
+      "description": "Can view their own personal information"
+    },
+    "updatePermission": {
+      "name": "Update Department Permissions",
+      "description": "Can update employee permissions in the department"
+    },
+    "viewAllEmployee": {
+      "name": "View All Employees",
+      "description": "Can view the list of all employees in the department"
+    },
+    "inviteEmployee": {
+      "name": "Invite Employee",
+      "description": "Can invite employees to the department"
+    },
+    "updateEmployee": {
+      "name": "Update Employee",
+      "description": "Can update employee information"
+    },
+    "deleteEmployee": {
+      "name": "Delete Employee",
+      "description": "Can delete employee accounts"
+    },
+    "updateDepartment": {
+      "name": "Update Department",
+      "description": "Can update department information"
+    },
+    "deleteDepartment": {
+      "name": "Delete Department",
+      "description": "Can delete the department"
+    }
+  },
+  "leaveRequestStatus": {
+    "APPROVED": "Approved",
+    "REJECTED": "Rejected",
+    "PENDING": "Pending approval",
+    "CANCELLED": "Cancelled",
+    "month": "Month",
+    "year": "Year",
+    "manage_leave_requests": "Manage leave requests",
+    "Leave_request_summary": "Leave request summary",
+    "employee": "Employee",
+    "type": "Leave type",
+    "reason": "Reason",
+    "time": "Time",
+    "status": "Status",
+    "actions": "Actions",
+    "approver": "Approver",
+    "date_send": "Date sent",
+    "no_leave_request": "No leave requests",
+    "loading": "Loading...",
+    "view_detail": "View details"
+  },
+  "notification": {
+    "notifications": "Notifications",
+    "markAllAsRead": "Mark all as read",
+    "all": "All",
+    "unread": "Unread",
+    "noNotification": "No new notifications",
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "clearAll": "Clear all"
+  },
+  "deletedLeave": {
+    "list-of-delete": "List of Leave Request",
+    "no-deleted": "No Leave Request Found",
+    "delete-lately": "Delete lately",
+    "can-restore": "Can restore",
+    "total-deleted": "Total delete",
+    "date": "Date",
+    "title": "Deleted Leave Requests",
+    "description": "Manage deleted leave requests - you can restore or permanently delete them",
+    "loading": "Loading data...",
+    "errorLoad": "Failed to load data",
+    "retry": "Retry",
+    "empty": "No deleted requests found",
+    "employee": "Employee",
+    "type": "Leave Type",
+    "time": "Leave Duration",
+    "reason": "Reason",
+    "status": "Status",
+    "deletedAt": "Deleted At",
+    "actions": "Actions",
+    "days": "days",
+    "restore": "Restore",
+    "deleteForever": "Delete Forever",
+    "restoreSuccess": "Successfully restored!",
+    "restoreFail": "Failed to restore",
+    "deleteSuccess": "Permanently deleted successfully!",
+    "deleteFail": "Failed to delete",
+    "confirmDelete": "Are you sure you want to permanently delete this request? This action cannot be undone!"
+  },
+  "leaveTypes": {
+    "1": "Annual Leave",
+    "2": "Sick Leave",
+    "3": "Personal Leave",
+    "4": "Other Leave"
+  },
+  "requestStatus": {
+    "1": "Pending",
+    "2": "Approved",
+    "3": "Rejected",
+    "4": "Cancelled",
+    "5": "Deleted"
+  },
+  "deletedDepartments": {
+    "title": "Deleted Departments",
+    "description": "Manage deleted departments and organizational structure",
+    "loading": "Loading data...",
+    "errorLoad": "Failed to load data",
+    "retry": "Retry",
+    "empty": "No deleted departments",
+    "notFound": "No departments found",
+    "back": "Back to main list",
+    "search": "Search by department name",
+    "name": "Department Name",
+    "level": "Level",
+    "status": "Status",
+    "createdAt": "Created At",
+    "deletedAt": "Deleted At",
+    "actions": "Actions",
+    "restore": "Restore",
+    "deleteForever": "Delete Forever",
+    "restoreSuccess": "Department restored successfully!",
+    "restoreFail": "Failed to restore department",
+    "deleteSuccess": "Department permanently deleted!",
+    "deleteFail": "Failed to delete department",
+    "confirmDelete": "Are you sure you want to permanently delete this department? This action cannot be undone!",
+    "restoreTitle": "Restore Department",
+    "restoreConfirm": "Are you sure you want to restore this department?"
+  },
+  "departmentStatus": {
+    "1": "Active",
+    "2": "Inactive"
+  },
+  "departmentLevels": {
+    "1": "Level 1",
+    "2": "Level 2",
+    "3": "Level 3"
+  },
+  "nav": {
+    "login": "Login",
+    "register": "Register"
+  },
+  "hero": {
+    "scroll": "Scroll down",
+    "welcome": "Welcome to AIOT"
+  },
+  "about": {
+    "title": "Smart Human Resource Management",
+    "body": "AIOT delivers attendance, employee, department and leave management in a single platform. Simple, modern and efficient for your organization.",
+    "viewMore": "Learn more"
+  }
+}

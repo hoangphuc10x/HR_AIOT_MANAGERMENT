@@ -1,0 +1,781 @@
+{
+  "common": {
+    "dashboard": "Bảng điều khiển",
+    "employees": "Nhân viên",
+    "departments": "Phòng ban",
+    "attendance": "Chấm công",
+    "leaveRequest": "Yêu cầu nghỉ phép",
+    "manageAttendance": "Quản lý chấm công",
+    "leaveRequestsSummary": "Quản lý đơn nghỉ phép",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất",
+    "search": "Tìm kiếm",
+    "add": "Thêm",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "back": "Quay lại",
+    "confirm": "Xác nhận",
+    "submit": "Gửi",
+    "loading": "Đang tải...",
+    "noData": "Không có dữ liệu",
+    "actions": "Hành động",
+    "list": "Danh sách",
+    "status": "Trạng thái",
+    "close": "Đóng",
+    "unknown": "Không xác định",
+    "update": "Cập nhật",
+    "invite": "Mời",
+    "editProfile": "Chỉnh sửa hồ sơ",
+    "permissions": "Quyền hạn",
+    "no": "STT",
+    "viewDetails": "Xem chi tiết",
+    "editPermission": "Chỉnh sửa quyền",
+    "remove": "Gỡ bỏ",
+    "admin": "Quản trị viên",
+    "staff": "Nhân viên",
+    "employee": "Nhân viên phòng ban",
+    "manager": "Quản lý phòng ban",
+    "optional": "Tuỳ chọn",
+    "hello": "Xin chào",
+    "updateAvatar": "Cập nhật ảnh đại diện",
+    "Timestamps": "Mốc thời gian",
+    "updateLogo": "Cập nhật logo trang web",
+    "clearAll": "Bỏ chọn tất cả",
+    "filter": "Bộ lọc",
+    "submitLoading": "Gửi",
+    "employeeCode": "Mã NV",
+    "legend": "Chú thích",
+    "showing": "Hiển thị",
+    "somethingWentWrong": "Đã có lỗi xảy ra",
+    "reloadPage": "Tải lại trang",
+    "contactSupport": "Liên hệ hỗ trợ",
+    "cropAvatar": "Cắt ảnh đại diện",
+    "restore": "Khôi phục"
+  },
+  "auth": {
+    "login": "Đăng nhập",
+    "logout": "Đăng xuất",
+    "username": "Tên đăng nhập",
+    "password": "Mật khẩu",
+    "changePassword": "Đổi mật khẩu",
+    "bankInfo": "Thông tin ngân hàng",
+    "bankAccount": "Số tài khoản ngân hàng",
+    "bankName": "Tên ngân hàng"
+  },
+  "employee": {
+    "name": "Tên",
+    "firstName": "Họ",
+    "lastName": "Tên",
+    "fullName": "Họ và tên",
+    "identityNumber": "Số CMND/CCCD",
+    "id": "Mã nhân viên",
+    "phone": "Số điện thoại",
+    "sex": "Giới tính",
+    "role": "Vai trò",
+    "email": "Email",
+    "avatarUrl": "Ảnh đại diện",
+    "status": "Trạng thái",
+    "createEmployee": "Thêm nhân viên mới",
+    "detail": "Chi tiết nhân viên",
+    "contactInfo": "Thông tin liên hệ",
+    "personalInfo": "Thông tin cá nhân",
+    "systemInfo": "Thông tin hệ thống",
+    "otherInfo": "Thông tin khác",
+    "noEmployeeFound": "Không tìm thấy nhân viên nào.",
+    "joinDate": "Ngày vào làm",
+    "statusTypes": {
+      "active": "Kích hoạt",
+      "inactive": "Chưa kích hoạt",
+      "suspended": "Nghỉ việc"
+    },
+    "employeeCode": "Mã nhân viên",
+    "showPermissions": "Phân quyền",
+    "hidePermissions": "Ẩn quyền",
+    "selectAll": "Chọn tất cả",
+    "clearAll": "Bỏ chọn tất cả",
+    "bankAccount": "Số tài khoản ngân hàng",
+    "bankName": "Tên ngân hàng",
+    "totalEmployees": "Tổng số nhân viên",
+    "activeEmployees": "Nhân viên đang làm",
+    "activeEmployeesDesc": "Số lượng nhân viên đang làm việc",
+    "inactiveEmployees": "Nhân viên nghỉ việc",
+    "delete": {
+      "confirm": "Bạn có chắc chắn muốn xóa nhân viên {{name}}?",
+      "success": "Xóa nhân viên thành công",
+      "error_department": "Nhân viên vẫn thuộc phòng ban nên không thể xóa"
+    },
+    "update": {
+      "success": "Cập nhật người dùng thành công",
+      "error": "Có lỗi xảy ra khi cập nhật thông tin người dùng"
+    },
+    "description": "Quản lý nhân viên trong tổ chức",
+    "dateOfBirth": "Ngày sinh",
+    "address": "Địa chỉ",
+    "createdAt": "Ngày tạo",
+    "roles": {
+      "ADMIN": "Quản trị viên",
+      "STAFF": "Nhân viên"
+    },
+    "addEmployeeDescription": "Điền thông tin bên dưới để tạo tài khoản nhân viên mới",
+    "createdDate": "Ngày tạo",
+    "lastUpdate": "Cập nhật lần cuối",
+    "deleteDate": "Ngày xóa",
+    "active": "Đang làm",
+    "inactive": "Nghỉ việc",
+    "pending": "Chưa kích hoạt",
+    "male": "Nam",
+    "female": "Nữ",
+    "other": "Khác",
+    "addressPlaceholder": "Nhập địa chỉ",
+    "fullNamePlaceholder": "Nhập họ và tên",
+    "createSuccess": "Tạo nhân viên thành công",
+    "createError": "Tạo nhân viên thất bại, vui lòng thử lại"
+  },
+  "dashboard": {
+    "title": "Dashboard Chấm Công",
+    "subtitle": "Tổng quan thống kê chấm công và nghỉ phép nhân viên",
+    "today": "Hôm nay",
+    "retry": "Thử lại",
+    "loadError": "Không thể tải dữ liệu dashboard.",
+    "unknownError": "Lỗi không xác định",
+    "absences": "Số ngày vắng",
+    "workingDays": "Ngày làm việc",
+    "absenceRate": "Tỉ lệ vắng",
+    "stats": {
+      "totalEmployees": "Tổng nhân viên",
+      "currentEmployees": "Tổng số nhân viên hiện tại",
+      "absentToday": "Vắng hôm nay",
+      "ofTotalEmployees": "tổng số nhân viên",
+      "absentThisMonth": "Vắng tháng này",
+      "totalAbsenceDaysMonth": "Tổng ngày vắng tháng 9",
+      "avgAbsenceRate": "Tỷ lệ vắng TB",
+      "normalLevel": "Trong mức bình thường",
+      "needMonitoring": "Cần theo dõi"
+    },
+    "departmentStats": {
+      "title": "Thống kê vắng mặt theo phòng ban",
+      "ranking": "Xếp hạng phòng ban có số ngày vắng nhiều nhất",
+      "employees": "nhân viên",
+      "days": "ngày",
+      "rate": "Tỷ lệ"
+    },
+    "topEmployees": {
+      "title": "Top nhân viên vắng nhiều nhất",
+      "ranking": "Xếp hạng",
+      "fullName": "Họ tên",
+      "department": "Phòng ban",
+      "position": "Vị trí",
+      "absenceDays": "Số ngày vắng",
+      "status": "Trạng thái"
+    },
+    "monthlyTrends": {
+      "title": "Thống kê vắng mặt theo tháng",
+      "maxAbsenceMonth": "Tháng vắng nhiều nhất",
+      "minAbsenceMonth": "Tháng vắng ít nhất",
+      "avgPerMonth": "Trung bình/tháng",
+      "avgAbsenceRate": "Tỷ lệ vắng TB",
+      "absenceDays": "ngày vắng",
+      "ofTotalWorkDays": "của tổng ngày làm việc"
+    },
+    "employee": {
+      "status": {
+        "warning": "Cảnh báo",
+        "monitor": "Cần theo dõi",
+        "normal": "Bình thường"
+      }
+    }
+  },
+  "department": {
+    "failToFetchPermissions": "Lỗi khi lấy phân quyền nhân viên",
+    "removeMemberConfirmTitle": "Bạn có chắc muốn xoá người này ra khỏi phòng ban?",
+    "removeMemberConfirmWarning": "Nhân viên sẽ bị xoá khỏi phòng ban vĩnh viễn",
+    "remove": "Xoá",
+    "failToRemoveMember": "Lỗi khi xoá nhân viên",
+    "memberRemoved": "Đã xoá nhân viên thành công",
+    "permissions": "Phân Quyền",
+    "description": "Quản lý phòng ban và cấu trúc tổ chức",
+    "manager": "Quản lý",
+    "viewDetails": "Xem chi tiết",
+    "departmentName": "Tên phòng ban",
+    "headOfDepartment": "Trưởng phòng",
+    "deputyOfDepartment": "Phó phòng",
+    "levelOfDepartment": "Cấp độ phòng",
+    "numberOfEmployees": "Số lượng nhân viên",
+    "activeDepartments": "Phòng ban đang hoạt động",
+    "inactiveDepartments": "Phòng ban ngừng hoạt động",
+    "deleteDepartment": "Phòng ban đã xoá",
+    "departmentList": "Danh sách phòng ban",
+    "position": "Vị trí",
+    "headDepartment": "Trưởng phòng",
+    "deputy": "Phó phòng",
+    "staff": "Nhân viên",
+    "contact": "Liên hệ",
+    "status": {
+      "1": "HOẠT ĐỘNG",
+      "2": "NGỪNG HOẠT ĐỘNG"
+    },
+    "id": "Mã phòng ban",
+    "members": "Thành viên phòng ban",
+    "noMemberFound": "Không tìm thấy thành viên",
+    "noDepartmentFound": "Không tìm thấy phòng ban nào.",
+    "searchByNameOrEmail": "Tìm theo tên hoặc email",
+    "searchByDepartmentName": "Tìm theo tên phòng ban",
+    "deleteConfirmTitle": "Xác nhận xóa",
+    "deleteConfirmMessage": "Bạn có chắc chắn muốn xóa mục này?",
+    "deleteConfirmWarning": "Xóa phòng ban này sẽ loại bỏ tất cả nhân viên thuộc về nó.",
+    "delete": "Xóa",
+    "cancel": "Hủy",
+    "update": "Cập nhật",
+    "membersList": "Danh sách nhân viên",
+    "select": "Chọn",
+    "addNewDepartment": "Thêm phòng ban mới",
+    "updateDepartment": "Cập nhật phòng ban",
+    "requiredName": "Tên phòng ban là bắt buộc",
+    "requiredHead": "Trưởng phòng là bắt buộc",
+    "failToFetch": "Không thể lấy dữ liệu phòng ban",
+    "failToAdd": "Thêm phòng ban thất bại",
+    "failToFetchMembers": "Không thể lấy dữ liệu thành viên",
+    "addSuccessful": "Thêm phòng ban thành công",
+    "failToUpdate": "Cập nhật phòng ban thất bại",
+    "updateSuccessful": "Cập nhật phòng ban thành công",
+    "duplicateName": "Tên phòng ban đã tồn tại",
+    "selectRole": "Chọn vai trò",
+    "pleaseSelectThisMemberFirst": "Vui lòng chọn thành viên này trước",
+    "permissionTitle": "Quyền hạn",
+    "permission": {
+      "1": "XEM",
+      "2": "Chỉnh sửa",
+      "3": "Xóa",
+      "4": "Mời"
+    },
+    "atLeastOnePermission": "Bạn phải chọn ít nhất một quyền.",
+    "noDepartmentAssigned": "Chưa được phân phòng ban",
+    "membersManagement": "Quản lý thành viên phòng ban",
+    "totalMembers": "Tổng số thành viên",
+    "removeSelected": "Xóa mục đã chọn",
+    "addEmployee": "Thêm nhân viên",
+    "searchMembers": "Tìm thành viên...",
+    "showingMembers": "Hiển thị {{count}} trên {{total}} thành viên",
+    "selectedMembers": "Nhân viên đã chọn",
+    "levelList": "Danh sách cấp độ",
+    "deleted": "Xóa phòng ban thành công",
+    "levels": {
+      "1": {
+        "name": "Cấp 1",
+        "description": "Phòng ban có thẩm quyền cao nhất",
+        "permissions": [
+          "Quản lý vai trò",
+          "Quản lý nhân viên",
+          "Quản lý phòng ban",
+          "Quản lý chấm công",
+          "Quản lý nghỉ phép"
+        ]
+      },
+      "2": {
+        "name": "Cấp 2",
+        "description": "Phòng ban quản lý nhân viên",
+        "permissions": [
+          "Quản lý nhân viên",
+          "Quản lý phòng ban",
+          "Quản lý chấm công",
+          "Quản lý nghỉ phép",
+          "Duyệt đơn nghỉ phép"
+        ]
+      },
+      "3": {
+        "name": "Cấp 3",
+        "description": "Phòng ban thông thường",
+        "permissions": [
+          "Quản lý nhân viên trong phòng ban",
+          "Quản lý các phòng ban tham gia"
+        ]
+      }
+    },
+    "noMembersSelected": "Chưa có nhân viên được chọn",
+    "selectHead": "Chọn trưởng phòng",
+    "selectDeputy": "Chọn phó phòng",
+    "level": "Mức phòng",
+    "addMembers": "Thêm nhân viên",
+    "permissionsForLevel": "Quyền cho cấp độ phòng"
+  },
+  "attendance": {
+    "attendanceManagement": "Quản lý chấm công",
+    "description": "Theo dõi chấm công và giờ làm việc của nhân viên",
+    "exportReport": "Xuất báo cáo",
+    "todayAttendance": "Chấm công hôm nay",
+    "employee": "Nhân viên",
+    "date": "Ngày",
+    "checkIn": "Giờ vào",
+    "checkOut": "Giờ ra",
+    "status": "Trạng thái",
+    "present": "Có mặt",
+    "late": "Đi trễ",
+    "absent": "Vắng mặt",
+    "title": "Chấm công cá nhân",
+    "greeting": "Xin chào, {{name}}",
+    "loadingAttendance": "Đang tải dữ liệu chấm công...",
+    "errorLoading": "Lỗi khi tải dữ liệu",
+    "retry": "Thử lại",
+    "checkInButton": "Chấm công vào",
+    "checkOutButton": "Chấm công ra",
+    "processing": "Đang xử lý...",
+    "locationOfCompany": "Tầng 6 của toà nhà đẹp nhất Đà Nẵng",
+    "todaySummary": "Tóm tắt hôm nay",
+    "checkInTime": "Giờ vào",
+    "checkOutTime": "Giờ ra",
+    "workingHours": "Số giờ làm việc",
+    "workingDays": "Ngày làm việc",
+    "onTime": "Đúng giờ",
+    "totalHours": "Tổng giờ",
+    "AttendanceTable": "Bảng chấm công",
+    "month": "Tháng",
+    "Date": "Ngày",
+    "weekDate": "Thứ",
+    "comingTime": "Giờ đến",
+    "outTime": "Giờ về",
+    "weekend": "Cuối tuần",
+    "noDataInMonth": "Không có dữ liệu trong tháng này",
+    "checkInSuccess": "Chấm công vào thành công",
+    "checkInFailed": "Chấm công vào thất bại",
+    "checkInError": "Lỗi khi chấm công vào",
+    "alreadyCheckedIn": "Bạn đã chấm công vào rồi",
+    "needCheckInFirst": "Bạn cần chấm công vào trước",
+    "confirmCheckout": "Bạn có chắc muốn chấm công ra không?",
+    "checkOutSuccess": "Chấm công ra thành công",
+    "checkOutFailed": "Chấm công ra thất bại",
+    "checkOutError": "Lỗi khi chấm công ra",
+    "done": "Đã hoàn thành chấm công hôm nay",
+    "attendanceStatus": {
+      "on_time": "Đúng giờ",
+      "late": "Đi muộn",
+      "early_leave": "Về sớm",
+      "absent": "Vắng mặt",
+      "working": "Đang làm việc",
+      "completed": "Hoàn thành",
+      "on_leave": "Nghỉ phép",
+      "late_and_early_leave": "Đi muộn & Về sớm",
+      "not_started": "Chưa bắt đầu"
+    },
+    "confirmCheckoutTitle": "Bạn chắc chắn muốn hoàn thành chấm công trong ngày chứ",
+    "confirmCheckoutMessage": "Nhấn 'Xác Nhận' để hoàn thành",
+    "information": "Thông tin",
+    "detail": "Chi tiết",
+    "edit": "Chỉnh sửa",
+    "leavingInformation": "Thông tin nghỉ phép",
+    "leaveType": "Loại nghỉ phép",
+    "time": "Thời gian",
+    "approveBy": "Được chấp thuận bởi",
+    "updateTitle": "Chỉnh sửa thời gian ra vào",
+    "confirmTitle": "Xác nhận thông tin chỉnh sửa"
+  },
+  "leaveRequest": {
+    "title": "Quản lý đơn nghỉ phép",
+    "newLeaveRequest": "Yêu cầu nghỉ phép mới",
+    "endDatMustAfterStart": "Ngày kết thúc phải lớn hơn hoặc bằng ngày bắt đầu",
+    "leaveType": "Loại nghỉ phép",
+    "annual": "Nghỉ thường niên",
+    "sick": "Nghỉ ốm",
+    "unpaid": "Nghỉ không lương",
+    "other": "Khác",
+    "reason": "Lý do",
+    "enterLeaveReason": "Nhập lý do nghỉ phép",
+    "startDate": "Ngày bắt đầu",
+    "endDate": "Ngày kết thúc",
+    "details": "Chi tiết đơn nghỉ phép",
+    "code": "Mã đơn",
+    "employee_info": "Thông tin nhân viên",
+    "leave_info": "Thông tin nghỉ phép",
+    "leave_type": "Loại nghỉ",
+    "time": "Thời gian",
+    "no_reason": "Không có lý do cụ thể",
+    "date_send": "Ngày gửi",
+    "status": "Trạng thái",
+    "approveBy": "Người duyệt",
+    "reject": "Từ chối",
+    "approve": "Duyệt",
+    "date": "Ngày",
+    "delete": "Xóa",
+    "approve_success": "Duyệt thành công",
+    "reject_success": "Từ chối thành công",
+    "cancel_success": "Hủy thành công",
+    "delete_leave_request_confirm": "Bạn có chắc chắn muốn xóa đơn nghỉ phép này không?",
+    "delete_leave_request_warning": "Hành động này không thể hoàn tác."
+  },
+  "pagination": {
+    "showing": "Hiển thị từ {{from}} đến {{to}} trên tổng {{total}} kết quả"
+  },
+  "login": {
+    "welcome_back": "Chào mừng trở lại",
+    "enter_details": "Vui lòng nhập thông tin",
+    "email_or_username": "Email",
+    "password": "Mật khẩu",
+    "forgot_password": "Quên mật khẩu?",
+    "login": "Đăng nhập",
+    "find_account": "Tìm tài khoản",
+    "confirm_password": "Xác nhận mật khẩu",
+    "reset_password": "Đặt lại mật khẩu",
+    "login_success": "Đăng nhập thành công",
+    "email": "Email"
+  },
+  "logout": {
+    "title": "Đăng xuất",
+    "confirm": "Bạn có chắc chắn muốn đăng xuất?",
+    "ok": "Đăng xuất",
+    "cancel": "Hủy",
+    "message": "Bạn có chắc chắn muốn đăng xuất?"
+  },
+  "forgot_password": {
+    "welcome_back": "Quên mật khẩu",
+    "enter_details": "Vui lòng nhập mật khẩu mới",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "confirm_password": "Xác nhận mật khẩu",
+    "reset_password": "Đặt lại mật khẩu",
+    "confirm_code": "Xác nhận mã thành công",
+    "verify_email": "Xác minh email",
+    "enter_email": "Vui lòng nhập email để đặt lại mật khẩu",
+    "sent_email": "Chúng tôi đã gửi email xác nhận đến địa chỉ của bạn",
+    "enter_password": " Vui lòng nhập mật khẩu hiện tại",
+    "enter-new_password": "Vui lòng nhập mật khẩu mới",
+    "confirm_new_password": "Vui lòng Xác nhận mật khẩu mới",
+    "submitLoading": "Đang đổi mật khẩu..."
+  },
+  "validation": {
+    "fullNameLength": "Họ và tên phải có độ dài hợp lệ",
+    "identityNumber": "Số CMND/CCCD không hợp lệ",
+    "dateOfBirthRequired": "Vui lòng nhập ngày sinh",
+    "emailInvalid": "Email không hợp lệ",
+    "phoneInvalid": "Số điện thoại không hợp lệ",
+    "dateOfBirthUnder18": "Nhân viên phải từ 18 tuổi trở lên",
+    "addressRequired": "Vui lòng nhập địa chỉ",
+    "fullNameInvalid": "Tên không hợp lệ"
+  },
+  "validate": {
+    "required": "Trường này là bắt buộc",
+    "invalid_email": "Email không hợp lệ",
+    "min_length": "Độ dài tối thiểu là {{min}} ký tự",
+    "max_length": "Độ dài tối đa là {{max}} ký tự",
+    "password_mismatch": "Mật khẩu không khớp",
+    "invalid_phone": "Số điện thoại không hợp lệ",
+    "invalid_identity_number": "Số CMND/CCCD không hợp lệ",
+    "invalid_date": "Ngày không hợp lệ",
+    "future_date": "Ngày không được lớn hơn ngày hiện tại",
+    "bank_account_length": "Số tài khoản ngân hàng không được vượt quá 20 ký tự",
+    "bank_name_length": "Tên ngân hàng không được vượt quá 100 ký tự",
+    "fullName_length": "Họ và tên không được vượt quá 100 ký tự",
+    "identityNumber_length": "Số CMND/CCCD không được vượt quá 12 ký tự",
+    "addressRequired": "Địa chỉ là bắt buộc",
+    "emailInvalid": "Email không hợp lệ",
+    "phoneInvalid": "Số điện thoại không hợp lệ",
+    "dateOfBirthInvalid": "Ngày sinh không hợp lệ",
+    "dateOfBirthRequired": "Ngày sinh là bắt buộc",
+    "dateOfBirthFuture": "Ngày sinh không được lớn hơn ngày hiện tại",
+    "userRolesRequired": "Vai trò là bắt buộc",
+    "statusRequired": "Trạng thái là bắt buộc"
+  },
+  "language": "Ngôn ngữ",
+  "vietnamese": "Tiếng Việt",
+  "english": "Tiếng Anh",
+  "export": "Xuất",
+  "reset_account": {
+    "welcome_back": "Chào mừng trở lại",
+    "enter_details": "Vui lòng nhập mật khẩu mới",
+    "newPassword": "Mật khẩu mới",
+    "verifyPassword": "nhập lại mật khẩu mới",
+    "go_to_login": "Đi đến trang login",
+    "confirm": "Xác nhận"
+  },
+  "activate_account": {
+    "welcome_back": "Kích hoạt tài khoản",
+    "enter_details": "Nhập tài khoản và mật khẩu đã được gửi về email của bạn để kích hoạt tài khoản",
+    "email": "Email",
+    "oldPassword": "Mật khẩu cũ",
+    "newPassword": "Mật khẩu mới",
+    "verifyPassword": "xác nhận mật khẩu mới",
+    "go_to_login": "Đến trang đăng nhập ngay",
+    "login": "Đăng nhập"
+  },
+  "userPermissions": {
+    "title": "Quản lý quyền người dùng",
+    "stt": "STT",
+    "id": "ID",
+    "name": "Tên",
+    "email": "Email",
+    "permissionCount": "{{count}} Quyền",
+    "actions": "Hành động",
+    "editPermission": "Chỉnh sửa quyền",
+    "searchPlaceholder": "Tìm theo tên hoặc email",
+    "showing": "Hiển thị từ ",
+    "of": "của",
+    "results": "kết quả",
+    "notPermit": "Không có quyền"
+  },
+  "delete": {
+    "confirmMessage": "Vui lòng nhập chính xác tên \"{{fullName}}\" để xác nhận xoá:",
+    "nameMismatch": "Tên không khớp. Đã huỷ xoá.",
+    "success": "Xoá người dùng thành công",
+    "error": "Có lỗi xảy ra khi xoá người dùng"
+  },
+  "permission": {
+    "saveSuccess": "Lưu phân quyền thành công",
+    "saveFailed": "Lưu phân quyền thất bại",
+    "saveFailedLog": "Failed to save permissions",
+    "saveError": "Có lỗi khi lưu phân quyền",
+    "userPermission": "Phân quyền người dùng",
+    "loadingPermission": "Đang tải quyền hiện tại...",
+    "overviewTitle": "Tổng quan quyền",
+    "overviewDescription": "Đã chọn {{count}} quyền cho người dùng này",
+    "saveChanges": "Lưu thay đổi",
+    "selectAll": "Chọn tất cả",
+    "deselectAll": "Bỏ chọn tất cả"
+  },
+  "permissionGroup": {
+    "system": "Quản lý hệ thống",
+    "employee": "Quản lý nhân viên",
+    "department": "Quản lý phòng ban",
+    "attendance": "Quản lý chấm công",
+    "leave": "Quản lý nghỉ phép"
+  },
+  "permissions": {
+    "setPermission": {
+      "name": "Phân quyền",
+      "description": "Có thể phân quyền cho người dùng khác"
+    },
+    "viewAllEmployee": {
+      "name": "Xem tất cả nhân viên",
+      "description": "Có thể xem danh sách tất cả nhân viên"
+    },
+    "createEmployee": {
+      "name": "Tạo nhân viên",
+      "description": "Có thể tạo tài khoản nhân viên mới"
+    },
+    "deleteEmployee": {
+      "name": "Xóa nhân viên",
+      "description": "Có thể xóa tài khoản nhân viên"
+    },
+    "viewAllDepartment": {
+      "name": "Xem tất cả phòng ban",
+      "description": "Có thể xem danh sách tất cả phòng ban"
+    },
+    "createDepartment": {
+      "name": "Tạo phòng ban",
+      "description": "Có thể tạo phòng ban mới"
+    },
+    "updateDepartment": {
+      "name": "Cập nhật phòng ban",
+      "description": "Có thể cập nhật thông tin phòng ban"
+    },
+    "deleteDepartment": {
+      "name": "Xóa phòng ban",
+      "description": "Có thể xóa phòng ban"
+    },
+    "removeEmployee": {
+      "name": "Loại bỏ nhân viên khỏi phòng ban",
+      "description": "Có thể loại bỏ nhân viên khỏi phòng ban"
+    },
+    "inviteEmployee": {
+      "name": "Mời nhân viên vào phòng ban",
+      "description": "Có thể mời nhân viên tham gia phòng ban"
+    },
+    "viewAttendance": {
+      "name": "Xem chấm công tất cả phòng ban",
+      "description": "Có thể xem thông tin chấm công của tất cả phòng ban"
+    },
+    "viewLeaveRequest": {
+      "name": "Xem đơn nghỉ phép tất cả phòng ban",
+      "description": "Có thể xem đơn nghỉ phép của tất cả phòng ban"
+    },
+    "approveLeaveRequest": {
+      "name": "Phê duyệt đơn nghỉ phép",
+      "description": "Có thể phê duyệt đơn nghỉ phép của tất cả phòng ban"
+    },
+    "rejectLeaveRequest": {
+      "name": "Từ chối đơn nghỉ phép",
+      "description": "Có thể từ chối đơn nghỉ phép của tất cả phòng ban"
+    },
+    "permissions": "Phân Quyền",
+    "employee": "Nhân viên",
+    "department": "Phòng ban",
+    "leaveRequest": "Yêu cầu nghỉ phép"
+  },
+  "changePassword": {
+    "title": "Đổi mật khẩu",
+    "currentPassword": "Mật khẩu hiện tại",
+    "newPassword": "Mật khẩu mới",
+    "confirmPassword": "Xác nhận mật khẩu mới",
+    "success": "Đổi mật khẩu thành công",
+    "requirements": {
+      "title": "Yêu cầu mật khẩu:",
+      "length": "Ít nhất 8 ký tự",
+      "different": "Phải khác mật khẩu hiện tại",
+      "mix": "Nên có chữ cái, số và ký tự đặc biệt để bảo mật tốt hơn"
+    },
+    "submit": "Đổi mật khẩu",
+    "submitLoading": "Đang đổi mật khẩu..."
+  },
+  "confirm_code": {
+    "access_email_to_reset_password": "Vui lòng kiểm tra email để lấy mã xác nhận đặt lại mật khẩu.",
+    "confirm": "Xác nhận",
+    "reset_success": "Mật khẩu của bạn đã được đặt lại thành công."
+  },
+  "departmentPermissionGroup": {
+    "management": "Quản lý phòng ban"
+  },
+  "departmentPermissions": {
+    "viewOnly": {
+      "name": "Chỉ xem chính bản thân",
+      "description": "Có thể xem thông tin cá nhân của mình"
+    },
+    "updatePermission": {
+      "name": "Cập nhật quyền trong phòng ban",
+      "description": "Có thể cập nhật quyền của nhân viên trong phòng ban"
+    },
+    "viewAllEmployee": {
+      "name": "Xem tất cả nhân viên",
+      "description": "Có thể xem danh sách tất cả nhân viên trong phòng ban"
+    },
+    "inviteEmployee": {
+      "name": "Mời nhân viên",
+      "description": "Có thể mời nhân viên vào phòng ban"
+    },
+    "updateEmployee": {
+      "name": "Cập nhật nhân viên",
+      "description": "Có thể cập nhật thông tin nhân viên"
+    },
+    "deleteEmployee": {
+      "name": "Xóa nhân viên",
+      "description": "Có thể xóa tài khoản nhân viên"
+    },
+    "updateDepartment": {
+      "name": "Cập nhật phòng ban",
+      "description": "Có thể cập nhật thông tin phòng ban"
+    },
+    "deleteDepartment": {
+      "name": "Xóa phòng ban",
+      "description": "Có thể xóa phòng ban"
+    }
+  },
+  "leaveRequestStatus": {
+    "APPROVED": "Đã duyệt",
+    "REJECTED": "Bị từ chối",
+    "PENDING": "Chờ duyệt",
+    "CANCELLED": "Đã hủy",
+    "month": "Tháng",
+    "year": "Năm",
+    "manage_leave_requests": "Quản lý đơn nghỉ phép",
+    "Leave_request_summary": "Tổng quan đơn nghỉ phép",
+    "employee": "Nhân viên",
+    "type": "Loại nghỉ",
+    "reason": "Lý do",
+    "time": "Thời gian",
+    "status": "Trạng thái",
+    "actions": "Hành động",
+    "approver": "Người duyệt",
+    "date_send": "Ngày gửi",
+    "no_leave_request": "Không có đơn nghỉ phép nào",
+    "loading": "Đang tải...",
+    "view_detail": "Xem chi tiết"
+  },
+  "notification": {
+    "notifications": "Thông báo",
+    "markAllAsRead": "Đánh dấu tất cả là đã đọc",
+    "all": "Tất cả",
+    "unread": "Chưa đọc",
+    "noNotification": "Không có thông báo mới",
+    "connected": "Đã kết nối",
+    "disconnected": "Mất kết nối",
+    "clearAll": "Xoá tất cả"
+  },
+  "deletedLeave": {
+    "list-of-delete": "Danh sách đã xoá",
+    "no-deleted": "Không có đơn nào bị xoá",
+    "delete-lately": "Xoá gần đây",
+    "can-restore": "Có thể khôi phục",
+    "total-deleted": "Tổng số đã xoá",
+    "date": "Ngày",
+    "title": "Đơn xin nghỉ đã xóa",
+    "description": "Quản lý các đơn xin nghỉ đã bị xóa - có thể khôi phục hoặc xóa vĩnh viễn",
+    "loading": "Đang tải dữ liệu...",
+    "errorLoad": "Lỗi khi tải dữ liệu",
+    "retry": "Thử lại",
+    "empty": "Không có đơn nào đã bị xóa",
+    "employee": "Nhân viên",
+    "type": "Loại nghỉ",
+    "time": "Thời gian nghỉ",
+    "reason": "Lý do",
+    "status": "Trạng thái",
+    "deletedAt": "Xóa lúc",
+    "actions": "Thao tác",
+    "days": "ngày",
+    "restore": "Khôi phục",
+    "deleteForever": "Xóa vĩnh viễn",
+    "restoreSuccess": "Khôi phục thành công!",
+    "restoreFail": "Lỗi khi khôi phục",
+    "deleteSuccess": "Xóa vĩnh viễn thành công!",
+    "deleteFail": "Lỗi khi xóa",
+    "confirmDelete": "Bạn có chắc chắn muốn xóa vĩnh viễn? Hành động này không thể hoàn tác!"
+  },
+  "leaveTypes": {
+    "1": "Nghỉ phép",
+    "2": "Nghỉ ốm",
+    "3": "Nghỉ cá nhân",
+    "4": "Nghỉ khác"
+  },
+  "requestStatus": {
+    "1": "Chờ duyệt",
+    "2": "Đã duyệt",
+    "3": "Từ chối",
+    "4": "Đã huỷ",
+    "5": "Đã xoá"
+  },
+  "deletedDepartments": {
+    "title": "Phòng ban đã xóa",
+    "description": "Quản lý phòng ban và cấu trúc tổ chức đã bị xóa",
+    "loading": "Đang tải dữ liệu...",
+    "errorLoad": "Lỗi khi tải dữ liệu",
+    "retry": "Thử lại",
+    "empty": "Không có phòng ban nào đã bị xóa",
+    "notFound": "Không tìm thấy phòng ban nào",
+    "back": "Quay lại danh sách chính",
+    "search": "Tìm theo tên phòng ban",
+    "name": "Tên phòng ban",
+    "level": "Cấp độ",
+    "status": "Trạng thái",
+    "createdAt": "Ngày tạo",
+    "deletedAt": "Xóa lúc",
+    "actions": "Hành động",
+    "restore": "Khôi phục",
+    "deleteForever": "Xóa vĩnh viễn",
+    "restoreSuccess": "Khôi phục phòng ban thành công!",
+    "restoreFail": "Lỗi khi khôi phục",
+    "deleteSuccess": "Xóa vĩnh viễn thành công!",
+    "deleteFail": "Lỗi khi xóa",
+    "confirmDelete": "Bạn có chắc chắn muốn xóa vĩnh viễn phòng ban này? Hành động này không thể hoàn tác!",
+    "restoreTitle": "Khôi phục phòng ban",
+    "restoreConfirm": "Bạn có chắc chắn muốn khôi phục phòng ban này?"
+  },
+  "departmentStatus": {
+    "1": "Hoạt động",
+    "2": "Không hoạt động"
+  },
+  "departmentLevels": {
+    "1": "Cấp 1",
+    "2": "Cấp 2",
+    "3": "Cấp 3"
+  },
+  "nav": {
+    "login": "Đăng nhập",
+    "register": "Đăng ký"
+  },
+  "hero": {
+    "scroll": "Cuộn xuống",
+    "welcome": "Chào mừng đến với AIOT"
+  },
+  "about": {
+    "title": "Hệ thống quản lý nhân sự thông minh",
+    "body": "AIOT mang đến giải pháp quản lý chấm công, nhân viên, phòng ban và nghỉ phép trong một nền tảng duy nhất. Đơn giản, hiện đại và hiệu quả cho doanh nghiệp của bạn.",
+    "viewMore": "Tìm hiểu thêm"
+  }
+}
