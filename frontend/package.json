@@ -33,7 +33,6 @@
     "socket.io": "^4.8.1",
     "socket.io-client": "^4.8.1",
     "tailwind-merge": "^3.3.1",
-    "toast": "^0.5.4",
     "zustand": "^5.0.8"
   },
   "devDependencies": {
